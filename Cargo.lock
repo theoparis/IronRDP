@@ -2393,6 +2393,7 @@ dependencies = [
  "ironrdp-input",
  "ironrdp-mstsgu",
  "ironrdp-pdu",
+ "ironrdp-rail",
  "ironrdp-rdpdr",
  "ironrdp-rdpsnd",
  "ironrdp-server",
@@ -2849,6 +2850,17 @@ version = "0.0.0"
 [[package]]
 name = "ironrdp-propertyset"
 version = "0.1.0"
+
+[[package]]
+name = "ironrdp-rail"
+version = "0.1.0"
+dependencies = [
+ "bitflags 2.13.1",
+ "ironrdp-core 0.2.1",
+ "ironrdp-pdu",
+ "ironrdp-svc",
+ "tracing",
+]
 
 [[package]]
 name = "ironrdp-rdcleanpath"

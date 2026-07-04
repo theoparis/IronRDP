@@ -102,6 +102,13 @@ RDPDR channel implementation.
 
 RDPSND static channel for audio output implemented as described in MS-RDPEA.
 
+#### [`crates/ironrdp-rail`](./crates/ironrdp-rail)
+
+RAIL (RemoteApp) static channel implemented as described in MS-RDPERP. Implements the handshake,
+client status, and remote program execution PDUs required to launch a single remote application
+window (analogous to FreeRDP's `/app` flag). Window-order PDUs (move/resize/z-order/icons) and a
+native window-integration backend are not yet implemented.
+
 #### [`crates/ironrdp-connector`](./crates/ironrdp-connector)
 
 State machines to drive an RDP connection sequence.

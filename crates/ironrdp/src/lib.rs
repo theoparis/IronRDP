@@ -56,6 +56,10 @@ pub use ironrdp_mstsgu as mstsgu;
 #[doc(inline)]
 pub use ironrdp_pdu as pdu;
 
+#[cfg(feature = "rail")]
+#[doc(inline)]
+pub use ironrdp_rail as rail;
+
 #[cfg(feature = "rdpdr")]
 #[doc(inline)]
 pub use ironrdp_rdpdr as rdpdr;
